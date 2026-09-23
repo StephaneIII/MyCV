@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&display=swap');
+@import 'tailwindcss';
+
+:root { --ink: #142633; --muted: #5b6870; --line: #23718b; --accent: #0877c9; --paper: #fbfcfc; --soft: #eaf2f3; }
+* { box-sizing: border-box; }
+html { background: #d7e0e2; }
+body { margin: 0; color: var(--ink); background: #d7e0e2; font-family: 'DM Sans', sans-serif; }
+a { color: #1c7188; text-decoration: underline; text-underline-offset: 2px; }
+strong { color: var(--ink); font-weight: 700; }
+.topbar { position: relative; min-height: 196px; overflow: hidden; display: grid; place-items: center; background: #102b43; color: white; border-bottom: 5px solid white; }
+.topbar__content { position: relative; z-index: 1; text-align: center; padding: 28px 20px; }
+.topbar__name { margin: 0; font: 600 clamp(2.2rem, 6vw, 4.2rem)/.9 'Barlow Condensed', sans-serif; letter-spacing: .08em; }
+.topbar__name span, .topbar__line span, .topbar__line strong, .topbar__line b { color: white; }
+.topbar__line { margin: 7px 0 0; color: white; font-size: clamp(.95rem, 2vw, 1.55rem); font-weight: 400; }
+.cv-page { padding: 48px 62px 40px; }
+.cv-sidebar { border-right: 1px solid #d6e0e2; padding-right: 42px; }
+.cv-section h2 { margin: 0 0 12px; color: var(--ink); font: 700 clamp(1.45rem, 2.5vw, 2rem)/1 'Barlow Condensed', sans-serif; letter-spacing: .02em; text-transform: uppercase; }
+.cv-main .cv-section { border-top: 3px solid var(--line); padding-top: 14px; }
+.cv-main .cv-section:first-child { border-top: 0; padding-top: 0; }
+p { line-height: 1.55; margin: 0 0 13px; }
+.contact-list { margin-top: 28px; }
+.contact-list dt { font-weight: 700; }
+.contact-list dd { margin: 0; }
+.skill-level { color: var(--muted); font-size: .9em; }
+h3 { margin: 0; font-size: 1.05rem; line-height: 1.35; }
+.timeline-date { color: var(--muted); font-style: italic; margin: 2px 0 14px; }
+ul { padding-left: 1.5rem; }
+li { margin-bottom: 10px; line-height: 1.45; padding-left: 5px; }
+li::marker { color: var(--accent); }
+.education-item p { margin: 3px 0 0; }
+.cv-footer { margin: 0; padding: 27px 20px; background: #102633; color: #dce9eb; }
+.cv-footer p { margin: 0 0 6px; }
+.cv-footer strong { color: white; }
+.footer__links { display: flex; justify-content: center; flex-wrap: wrap; gap: 10px; }
+.cv-footer a { color: #77c9f7; }
